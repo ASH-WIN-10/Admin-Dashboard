@@ -201,6 +201,10 @@ button:active {
     gap: 12px;
 }
 
+.announcements, .trending {
+    min-width: 250px;
+}
+
 .title {
     font-weight: 600;
     font-size: 1.4rem;
@@ -229,11 +233,11 @@ button:active {
     flex-direction: column;
     justify-content: space-between;
     gap: 12px;
+    padding: 28px;
 }
 
 .project-card {
     border-left: 10px solid #166534;
-    padding: 26px 22px;
 }
 
 .icons {
@@ -244,10 +248,6 @@ button:active {
 
 .icon {
     height: 1.7em;
-}
-
-.announcements-card {
-    padding: 28px;
 }
 
 .announcement {
@@ -272,4 +272,24 @@ button:active {
 hr {
     width: 100%;
     border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.trending {
+    margin-top: var(--main-content-gap);
+    font-size: 15px;
+}
+
+.trending-card {
+    display: grid;
+    gap: 28px;
+}
+
+.trending-card > .user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.username {
+    font-weight: 600;
 }
