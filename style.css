@@ -55,6 +55,8 @@ ul {
     width: 100%;
     max-width: 500px;
     min-width: 100px;
+    padding-inline: 12px;
+    font-size: 16px;
 }
 
 input:focus {
@@ -178,6 +180,10 @@ button:active {
     top: .125em;
 }
 
+.info {
+    color: #3c3b3b;
+}
+
 /* Main Content */
 
 .main-content {
@@ -197,12 +203,12 @@ button:active {
 
 .title {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .card > .heading {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .projects {
@@ -219,7 +225,6 @@ button:active {
     background-color: white;
     border-radius: 6px;
     box-shadow: 1px 1px 6px 0 rgb(0, 0, 0, 0.2);
-    padding: 26px 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -228,12 +233,43 @@ button:active {
 
 .project-card {
     border-left: 10px solid #166534;
+    padding: 26px 22px;
 }
 
 .icons {
     align-self: flex-end;
+    display: flex;
+    gap: 16px;
 }
 
 .icon {
     height: 1.7em;
+}
+
+.announcements-card {
+    padding: 28px;
+}
+
+.announcement {
+    > .heading {
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+
+    > .info {
+        font-size: 0.9rem;
+        margin-top: 3px;
+    }
+}
+
+.info {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.1);
 }
