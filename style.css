@@ -181,6 +181,8 @@ button:active {
 }
 
 .info {
+    display: block;
+    margin-top: 3px;
     color: #3c3b3b;
 }
 
@@ -210,7 +212,7 @@ button:active {
     font-size: 1.4rem;
 }
 
-.card > .heading {
+.card .heading {
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -238,6 +240,7 @@ button:active {
 
 .project-card {
     border-left: 10px solid #166534;
+    height: 175px;
 }
 
 .icons {
@@ -258,15 +261,11 @@ button:active {
 
     > .info {
         font-size: 0.9rem;
-        margin-top: 3px;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
-}
-
-.info {
-    -webkit-line-clamp: 3;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 hr {
